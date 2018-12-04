@@ -28,17 +28,17 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.post("/api/users", uc.createFile);
-app.get("/api/users/:user_id", uc.readFile);
-app.put("/api/users/:user_id", uc.updateFile);
-app.delete("/api/users/:user_id", uc.deleteFile);
+// app.post("/api/users", uc.createFile);
+// app.get("/api/users/:user_id", uc.readFile);
+// app.put("/api/users/:user_id", uc.updateFile);
+// app.delete("/api/users/:user_id", uc.deleteFile);
 
-app.get("/api/users/:user_id/docs", dc.readFile);
-app.post("/api/users/:user_id/docs", dc.createFile);
-app.delete("/api/users/:user_id/docs/:doc_id", dc.deleteFile);
+// app.get("/api/users/:user_id/docs", dc.readFile);
+// app.post("/api/users/:user_id/docs", dc.createFile);
+// app.delete("/api/users/:user_id/docs/:doc_id", dc.deleteFile);
 
-app.get("/api/users/:user_id/docs/:doc_id", ic.readFile);
-app.put("/api/users/:user_id/docs/:doc_id", ic.updateFile);
+// app.get("/api/users/:user_id/docs/:doc_id", ic.readFile);
+// app.put("/api/users/:user_id/docs/:doc_id", ic.updateFile);
 
 SERVER_PORT = SERVER_PORT || 3005;
 
